@@ -1,4 +1,4 @@
-#pythonPATHWAY
+#hoangminhtruong
 def score(): 
     diem_so = 0 
     Q1 = input('Câu 1: Sản phẩm nào sau đây không phải hãng điện thoại?\nA. Samsung\nB. Sony\nC. Gucci\nD. Apple\n Mời bạn chọn đáp án đúng: ').lower()
