@@ -47,6 +47,6 @@ for question in questions:
 print("        KẾT QUẢ SAU CÙNG")
 print("Kết quả sau cùng của bạn là", score)
 print('Cảm ơn bạn đã tham gia trò chơi')
-
+con chưa làm xong nha cô
 
 
