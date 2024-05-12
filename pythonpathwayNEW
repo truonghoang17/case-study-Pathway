@@ -8,7 +8,6 @@ questions = ("Sản phẩm nào sau đây khong phải hãng điện thoại: "
                        "Tính tích phân ∫4x^2: ",
                        "5C2 bằng mấy: ",
                        "Màu nào sau đây không phải màu cơ bản(primary color): ")
-
 choices = (("A. Samsung", "B. Sony", "C. Gucci", "D. Apple"),
                    ("A.lionel Messi", "B. Cristiano Ronaldo", "C. Pele", "D. Di stefano"),
                    ("A. Nguyễn Nhật Ánh", "B. Nguyễn Du", "C. Xuân Diệu", "D. Nam Cao"),
