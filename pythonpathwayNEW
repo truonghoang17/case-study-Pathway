@@ -19,7 +19,7 @@ choices = (("A. Samsung", "B. Sony", "C. Gucci", "D. Apple"),
                    ("A. 1", "B. 5", "C. 10", "D. 15"),
                    ("A. Đỏ", "B. Xanh dương", "C. Vàng", "D. Xanh lá"))
 score = 0
-answers = ("C", "B", "D", "D", "B", "B", "C", "A", "C", "D")
+answers = ("C", "B", "B", "D", "B", "B", "C", "A", "C", "D")
 guesses = []
 question_number = 0
 print("CHÀO MỪNG BẠN ĐÃ ĐẾN VỚI TRÒ CHƠI AI LÀ TỈ PHÚ")
