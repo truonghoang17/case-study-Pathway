@@ -1,0 +1,56 @@
+import random
+
+questions = ("San pham nao sau day khong phai hang dien thoai: ",
+                       "Ai là cầu thủ ghi nhiều bàn thắng nhất trong bóng đá: ",
+                       "Ai là tác giả của truyện thơ Truyện Kiều: ",
+                       "Thế văn hội Olympic tổ chức bao lâu một lần: ",
+                       "Ai trong số những ca sĩ này là người Canada: ",
+                       "Ngôn ngữ lập trình nào được sử dụng rộng rãi nhất hiện nay: ",
+                       "Hãng xe nào sau đây không phải là siêu xe: ",
+                       "Tính tích phân ∫4x^2: ",
+                       "5C2 bằng mấy: ",
+                       "Màu nào sau đây không phải màu cơ bản(primary color): ")
+
+options = (("A. Samsung", "B. Sony", "C. Gucci", "D. Apple"),
+                   ("A.lionel Messi", "B. Cristiano Ronaldo", "C. Pele", "D. Di stefano"),
+                   ("A. Nguyễn Nhật Ánh", "B. Nguyễn Du", "C. Xuân Diệu", "D. Nam Cao"),
+                   ("A. 3", "B. 2", "C. 5", "D. 4"),
+                   ("A. Kanye West", "B. Justin Bieber", "C. Taylor Swift", "D. Ariana Grande"),
+                   ("A. Pascal", "B. Python", "C. English", "D. French"),
+                   ("A. Lamborghini", "B. McLaren", "C. Honda", "D. Ferrari"),
+                   ("A. 4/3x^3", "B. 2x^2", "C. 4/5x^3", "D. 4x^3"),
+                   ("A. 1", "B. 5", "C. 10", "D. 15"),
+                   ("A. Đỏ", "B. Xanh dương", "C. Vàng", "D. Xanh lá"))
+score = 0
+answers = ("C", "B", "D", "D", "B", "B", "C", "A", "C", "D")
+guesses = []
+question_number = 0
+print("CHÀO MỪNG BẠN ĐÃ ĐẾN VỚI TRÒ CHƠI AI LÀ TỈ PHÚ")
+print("LUẬT CHƠI: VỚI MỖI CÂU TRẢ LỜI CHÍNH XÁC SỐ ĐIỂM CỦA BẠN SẼ TĂNG LÊN 100000, THAY VÀO ĐÓ NẾU TRẢ LỜI SAI SẼ BỊ TRỪ VÀO SỐ ĐIỂM 100000")
+print("BẠN SẼ PHẢI TRẢ LỜI TẤT CẢ CÁC CÂU HỎI CỦA CHƯƠNG TRÌNH DÙ ĐÚNG HAY SAI")
+print("NẾU SỐ ĐIỂM CỦA BẠN SAU CÙNG LÀ SỐ DƯƠNG THÌ BẠN ĐƯỢC MANG VỀ NHÀ, CÒN KHÔNG THÌ NỘP SỐ TIỀN TƯƠNG ĐƯƠNG VỚI SỐ ĐIỂM BẠN ĐÃ THUA")
+print("QUYỀN LỢI CỦA THÍ SINH")
+print('Số 1: Gọi điện thoại cho người thân')
+print("Số 2: Lựa chọn phương án 50/50")
+print("Số 3: THOÁT APP VÀ TỪ BỎ CUỘC CHƠI")
+for question in questions:
+    print("___________________________________________________")
+    print(question)
+    for option in options[question_number]:
+        print(option)
+
+    guess = input("Nhập vào sự lựa chọn của bạn (A, B, C, D): ").upper()
+    guesses.append(guess)
+    if guess == answers[question_number]:
+        score = score + 100000
+        print("Chúc mừng bạn đã nhận được:", score)
+    else:
+        score = score - 100000
+        print("Bạn đã bị trừ còn:", score)
+    question_number += 1
+print("        KẾT QUẢ SAU CÙNG")
+print("Kết quả sau cùng của bạn là", score)
+print('Cảm ơn bạn đã tham gia trò chơi')
+
+
+
