@@ -9,7 +9,7 @@ questions = ("Sản phẩm nào sau đây khong phải hãng điện thoại: "
                        "5C2 bằng mấy: ",
                        "Màu nào sau đây không phải màu cơ bản(primary color): ")
 
-options = (("A. Samsung", "B. Sony", "C. Gucci", "D. Apple"),
+choices = (("A. Samsung", "B. Sony", "C. Gucci", "D. Apple"),
                    ("A.lionel Messi", "B. Cristiano Ronaldo", "C. Pele", "D. Di stefano"),
                    ("A. Nguyễn Nhật Ánh", "B. Nguyễn Du", "C. Xuân Diệu", "D. Nam Cao"),
                    ("A. 3", "B. 2", "C. 5", "D. 4"),
@@ -34,7 +34,7 @@ print("Số 3: THOÁT APP VÀ TỪ BỎ CUỘC CHƠI")
 for question in questions:
     print("___________________________________________________")
     print(question)
-    for option in options[question_number]:
+    for choice in choices[question_number]:
         print(option)
     guess = input("Nhập vào sự lựa chọn của bạn (A, B, C, D): ").upper()
     guesses.append(guess)
