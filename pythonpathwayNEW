@@ -36,7 +36,6 @@ for question in questions:
     print(question)
     for option in options[question_number]:
         print(option)
-
     guess = input("Nhập vào sự lựa chọn của bạn (A, B, C, D): ").upper()
     guesses.append(guess)
     if guess == answers[question_number]:
