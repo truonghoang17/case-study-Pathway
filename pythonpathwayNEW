@@ -1,5 +1,3 @@
-import random
-
 questions = ("San pham nao sau day khong phai hang dien thoai: ",
                        "Ai là cầu thủ ghi nhiều bàn thắng nhất trong bóng đá: ",
                        "Ai là tác giả của truyện thơ Truyện Kiều: ",
